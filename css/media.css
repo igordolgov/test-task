@@ -1,0 +1,15 @@
+@media (min-width: 1366px) {
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .main {
+    top: 120px;
+  }
+
+  .services {
+    padding-top: 600px;
+    padding-bottom: 90px;
+  }
+}
