@@ -5,9 +5,22 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"), url(../fonts/Montserrat-Regular.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
 html,
 body {
     font-family: "Gilroy", sans-serif;
+}
+
+main {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
 }
 
 .flex {
@@ -633,11 +646,17 @@ header.container {
 
 .contacts__form {
     margin-top: 25px;
+    font-family: "Montserrat";
 }
 
 .contacts__form-field {
     position: relative;
     margin-bottom: 34px;
+    height: 30px;
+    width: 100%;
+    resize: none;
+    margin-bottom: 20px;
+    padding-left: 0;
 }
 
 .contacts__form-field::after {
@@ -652,7 +671,7 @@ header.container {
 
 .contacts__form-field .pin {
     position: absolute;
-    top: 50%;
+    top: 10%;
     right: 0;
 }
 
@@ -674,7 +693,6 @@ header.container {
 }
 
 .contacts__textarea {
-    height: 30px;
     resize: none;
     margin-bottom: 20px;
     padding-left: 0;
@@ -687,12 +705,15 @@ header.container {
     width: 20px;
     height: 20px;
     display: block;
-    cursor: pointer;
 }
 
 .file-label__input {
     width: 10px;
     height: 0;
+}
+
+.pin img {
+    cursor: pointer;
 }
 
 .contacts__consent {
@@ -749,12 +770,6 @@ header.container {
     width: 100%;
     height: 1.5px;
     background-color: #222222;
-}
-
-main {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
 }
 
 .title-outline {

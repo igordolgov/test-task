@@ -297,15 +297,20 @@
                         <input type="tel" name="tel" placeholder="example@example.com">
                      </div>
 
-                     <div class="contacts__form-field">
-                        <label for="appeal">Ваше сообщение</label>
-                        <!-- <textarea class="contacts__textarea" wrap="soft" type="email" name="message" id="message" placeholder="Текст обращения" value=""></textarea> -->
+                     <label for="appeal">Ваше сообщение</label>
 
-                        <label class="file-label" tabindex="0">
-                           <img src="./image/main/svg/clip.svg" alt="Прикрепить файл">
+                     <div class="contacts__form-field">
+                        <textarea
+                           class="contacts__textarea" wrap="soft" rows="1" name="message" id="appeal" placeholder="Текст обращения">
+                        </textarea>
+
+                        <label class="pin" tabindex="0">
+                           <img src="./image/main/svg/clip.svg" alt="Прикрепить файл" title="Прикрепить файл">
+
                            <input class="file-label__input" type="file" name="file" tabindex="1">
-                         </label>
+                        </label>
                      </div>
+
 
                      <span class="contacts__consent">Нажимая на кнопку «Получить консультацию», вы соглашаетесь<br>на
                         <abbr title="включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу" tabindex="0">обработку персональных данных</abbr>
